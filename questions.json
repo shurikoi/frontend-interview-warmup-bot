@@ -1,0 +1,660 @@
+{
+  "html": [
+    {
+      "id": 1,
+      "text": "Which tag is used to create a link?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<link>", "isCorrect": false },
+        { "id": 2, "text": "<a>", "isCorrect": true },
+        { "id": 3, "text": "<href>", "isCorrect": false },
+        { "id": 4, "text": "<anchor>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Which tag is used to insert an image?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<img>", "isCorrect": true },
+        { "id": 2, "text": "<picture>", "isCorrect": false },
+        { "id": 3, "text": "<media>", "isCorrect": false },
+        { "id": 4, "text": "<graphic>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Which tag within <html> defines the document's title?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<head>", "isCorrect": true },
+        { "id": 2, "text": "<header>", "isCorrect": false },
+        { "id": 3, "text": "<title>", "isCorrect": false },
+        { "id": 4, "text": "<meta>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Which attribute is used to specify alternative text for an image?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "src", "isCorrect": false },
+        { "id": 2, "text": "alt", "isCorrect": true },
+        { "id": 3, "text": "title", "isCorrect": false },
+        { "id": 4, "text": "href", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Which attribute allows you to open a link in a new tab?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "target=_blank", "isCorrect": true },
+        { "id": 2, "text": "target=blank", "isCorrect": false },
+        { "id": 3, "text": "target=_self", "isCorrect": false },
+        { "id": 4, "text": "target=_new", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "What is the 'placeholder' attribute used for?",
+      "hasOptions": false,
+      "answer": "The 'placeholder' attribute is used to display a text hint or example in a form field before the user begins entering their data."
+    },
+    {
+      "id": 7,
+      "text": "How do you create an unordered list in HTML?",
+      "hasOptions": false,
+      "answer": "To create an unordered list in HTML, you use the <ul> tag, and to define each list item, you use the <li> tag."
+    },
+    {
+      "id": 8,
+      "text": "What is HTML?",
+      "hasOptions": false,
+      "answer": "HTML (HyperText Markup Language) is a standardized markup language used for creating and developing web pages. It is a system for marking up individual parts of a web page using tags enclosed in angle brackets."
+    },
+    {
+      "id": 9,
+      "text": "What does the <!DOCTYPE> tag do?",
+      "hasOptions": false,
+      "answer": "It is a declaration that informs the web browser about the version of the markup language used in creating the web page. This helps the browser display the page correctly."
+    },
+    {
+      "id": 10,
+      "text": "Which tag is used to create a table?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<table>", "isCorrect": true },
+        { "id": 2, "text": "<grid>", "isCorrect": false },
+        { "id": 3, "text": "<row>", "isCorrect": false },
+        { "id": 4, "text": "<column>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Which tag is used to create a table header?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<caption>", "isCorrect": false },
+        { "id": 2, "text": "<th>", "isCorrect": false },
+        { "id": 3, "text": "<thead>", "isCorrect": true },
+        { "id": 4, "text": "<title>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Which tag is used to create a table row?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<td>", "isCorrect": false },
+        { "id": 2, "text": "<row>", "isCorrect": false },
+        { "id": 3, "text": "<line>", "isCorrect": false },
+        { "id": 4, "text": "<tr>", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Which tag is used to create a table cell?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<cell>", "isCorrect": false },
+        { "id": 2, "text": "<tr>", "isCorrect": false },
+        { "id": 3, "text": "<th>", "isCorrect": false },
+        { "id": 4, "text": "<td>", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "What are semantic tags in HTML?",
+      "hasOptions": false,
+      "answer": "Semantic tags in HTML are tags that convey information about the meaning or purpose of content, rather than just its appearance. Examples of semantic tags include header, footer, article, section, nav, and more. They help create more structured and accessible web pages."
+    },
+    {
+      "id": 15,
+      "text": "Which attribute is used to set a background image?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "background", "isCorrect": false },
+        { "id": 2, "text": "background-color", "isCorrect": false },
+        { "id": 3, "text": "bgcolor", "isCorrect": false },
+        { "id": 4, "text": "background-image", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Which tag is used to create a dropdown list?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<dropdown>", "isCorrect": false },
+        { "id": 2, "text": "<list>", "isCorrect": false },
+        { "id": 3, "text": "<select>", "isCorrect": true },
+        { "id": 4, "text": "<option>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Which tag is used to insert JavaScript code into an HTML document?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<javascript>", "isCorrect": false },
+        { "id": 2, "text": "<script>", "isCorrect": true },
+        { "id": 3, "text": "<js>", "isCorrect": false },
+        { "id": 4, "text": "<java>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Which attribute is used to specify the path to an image?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "src", "isCorrect": true },
+        { "id": 2, "text": "href", "isCorrect": false },
+        { "id": 3, "text": "path", "isCorrect": false },
+        { "id": 4, "text": "url", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "What does the 'readonly' attribute do in a form element?",
+      "hasOptions": false,
+      "answer": "The 'readonly' attribute makes a form element read-only, meaning that the user cannot change the value of the element but can view it. This can be useful for displaying information that should not be modified."
+    },
+    {
+      "id": 20,
+      "text": "What are web standards, and why are they necessary?",
+      "hasOptions": false,
+      "answer": "Web standards are recommendations developed by standards organizations like W3C or WHATWG to ensure compatibility and stability of web technologies. They include recommendations for HTML, CSS, JavaScript, and other web technologies. Adhering to web standards helps ensure proper functioning of web pages across different browsers and devices, and facilitates maintenance and future expansion of websites."
+    },
+    {
+      "id": 21,
+      "text": "What is responsive web design?",
+      "hasOptions": false,
+      "answer": "Responsive web design is an approach to web design that allows web pages to display and function correctly on various devices, including mobile phones, tablets, and desktop computers. It achieves this by using flexible layouts, flexible images, and CSS media queries to adapt the design to different screen sizes and device characteristics."
+    },
+    {
+      "id": 22,
+      "text": "Which HTML tag is used to embed videos?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<media>", "isCorrect": false },
+        { "id": 2, "text": "<video>", "isCorrect": true },
+        { "id": 3, "text": "<movie>", "isCorrect": false },
+        { "id": 4, "text": "<multimedia>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Which tag is used to create the main heading on a web page?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<h1>", "isCorrect": true },
+        { "id": 2, "text": "<header>", "isCorrect": false },
+        { "id": 3, "text": "<title>", "isCorrect": false },
+        { "id": 4, "text": "<head>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 24,
+      "text": "What does the <br> tag do?",
+      "hasOptions": false,
+      "answer": "It is used to create a line break, allowing you to create a new line at the location where it is placed. This is a convenient way to control the layout of text on a web page without using additional styles or elements."
+    },
+    {
+      "id": 25,
+      "text": "Which tag is used to create an ordered list?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<ul>", "isCorrect": false },
+        { "id": 2, "text": "<ol>", "isCorrect": true },
+        { "id": 3, "text": "<li>", "isCorrect": false },
+        { "id": 4, "text": "<list>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 26,
+      "text": "What is DOM in the context of web development?",
+      "hasOptions": false,
+      "answer": "DOM (Document Object Model) is a software interface for web documents. It represents the structured document as an object model, allowing programs and scripts to interact with the content, structure, and styles of a web page. DOM represents the document as a tree of objects, each corresponding to a part of the page."
+    },
+    {
+      "id": 27,
+      "text": "Which attribute is used to define styles for an element on a page?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "style", "isCorrect": true },
+        { "id": 2, "text": "css", "isCorrect": false },
+        { "id": 3, "text": "styles", "isCorrect": false },
+        { "id": 4, "text": "stylesheet", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 28,
+      "text": "What is the 'alt' attribute in the <img> tag used for?",
+      "hasOptions": false,
+      "answer": "It is used to provide alternative text that will be displayed in case the image cannot be loaded. This can also be useful for accessibility, as screen readers can use this text to describe the image to users with disabilities."
+    }
+  ],
+  "css": [
+    {
+      "id": 1,
+      "text": "What is the difference between 'resetting' and 'normalizing' in CSS? Which one would you choose and why?",
+      "hasOptions": false,
+      "answer": "Resetting resets all browser-default styles of elements, while Normalizing brings styles to a consistent look across all browsers. It's better to use Normalize for cross-browser consistency."
+    },
+    {
+      "id": 2,
+      "text": "What is CSS selector specificity, and how does it work?",
+      "hasOptions": false,
+      "answer": "Selector specificity (also known as weight) is a property that determines the priority of a style rule, i.e., which style will be applied to an HTML element in the end. For example, when using some UI library, the library's default styles will be applied to its elements. If needed, you can change the styles with your more specific selector. Learn more here: <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity' target='_blank'>Specificity (MDN)</a>."
+    },
+    {
+      "id": 3,
+      "text": "What is CSS?",
+      "hasOptions": false,
+      "answer": "CSS (Cascading Style Sheets) is a style language used to describe the presentation and formatting of a document written in a markup language such as HTML. CSS enables developers to control the layout, fonts, colors, and other stylistic aspects of a web page."
+    },
+    {
+      "id": 4,
+      "text": "Why is it usually better to place CSS links in the <head> and <script> tags before the </body> tag? Are there any exceptions? Provide examples.",
+      "hasOptions": false,
+      "answer": "Styles are recommended to be placed in the head to make the page adopt its appearance as quickly as possible. Scripts placed in the head can slow down this process, so it's recommended to include them before the closing body tag. An exception is analytics scripts used to track visitors who don't wait for the page to load. In such cases, the script should be placed in the head."
+    },
+    {
+      "id": 5,
+      "text": "What does the 'z-index' property do in CSS?",
+      "hasOptions": false,
+      "answer": "The 'z-index' property in CSS controls the stacking order of elements along the Z-axis. An element with a higher 'z-index' value will be displayed on top of an element with a lower 'z-index' value."
+    },
+    {
+      "id": 6,
+      "text": "What are the methods to center a div in CSS?",
+      "hasOptions": false,
+      "answer": "There are several methods to center a div in CSS. Here are some of them: \n1. Using the 'margin' property with 'auto': `margin: 0 auto;`.\n2. Using Flexbox: `display: flex; justify-content: center; align-items: center;`.\n3. Using Grid Layout: `display: grid; place-items: center;`.\n4. Using 'text-align' and 'display: inline-block;' on the parent and child elements."
+    },
+    {
+      "id": 7,
+      "text": "Which property is used to set the background color?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "color", "isCorrect": false },
+        { "id": 2, "text": "background-color", "isCorrect": true },
+        { "id": 3, "text": "bgcolor", "isCorrect": false },
+        { "id": 4, "text": "background", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Which property allows you to set the external margins of an element?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "padding", "isCorrect": false },
+        { "id": 2, "text": "border", "isCorrect": false },
+        { "id": 3, "text": "margin", "isCorrect": true },
+        { "id": 4, "text": "spacing", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Which property is used to set the font?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "font-weight", "isCorrect": false },
+        { "id": 2, "text": "font-style", "isCorrect": false },
+        { "id": 3, "text": "text-font", "isCorrect": false },
+        { "id": 4, "text": "font-family", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Which CSS property allows you to control the visibility of an element in the DOM while preserving its space?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "display: none", "isCorrect": false },
+        { "id": 2, "text": "visibility: hidden", "isCorrect": true },
+        { "id": 3, "text": "is-visible: 0", "isCorrect": false },
+        { "id": 4, "text": "color: transparent", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Which CSS property is used to apply shadows to elements?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "box-shadow", "isCorrect": true },
+        { "id": 2, "text": "text-shadow", "isCorrect": false },
+        { "id": 3, "text": "shadow", "isCorrect": false },
+        { "id": 4, "text": "border-shadow", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Which CSS selector selects all .child elements that are direct children of .parent?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": ".parent + .child", "isCorrect": false },
+        { "id": 2, "text": ".parent ~ .child", "isCorrect": false },
+        { "id": 3, "text": ".parent > .child", "isCorrect": true },
+        { "id": 4, "text": ".parent .child", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Which CSS selector selects all elements that have a specified attribute starting with a certain string?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "[attr=value]", "isCorrect": false },
+        { "id": 2, "text": "[attr~=value]", "isCorrect": false },
+        { "id": 3, "text": "[attr|=value]", "isCorrect": false },
+        { "id": 4, "text": "[attr^=value]", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Which CSS selector selects all elements that have a specified attribute ending with a certain string?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "[attr=value]", "isCorrect": false },
+        { "id": 2, "text": "[attr~=value]", "isCorrect": false },
+        { "id": 3, "text": "[attr|=value]", "isCorrect": false },
+        { "id": 4, "text": "[attr$=value]", "isCorrect": true }
+      ]
+    }
+  ],
+  "javascript": [
+    {
+      "id": 1,
+      "text": "What is a pure function?",
+      "hasOptions": false,
+      "answer": "A pure function is a function that returns the same result when called with the same set of arguments and has no side effects."
+    },
+    {
+      "id": 2,
+      "text": "What is a closure?",
+      "hasOptions": false,
+      "answer": "Closures are the ability of a function to remember the lexical environment in which it was created, i.e., to store a reference to this environment and access it. <a href='https://youtu.be/mI6Jcfsgma4?si=46DV3mXPF6mDTTPs' target='_blank'>Detailed video about closures</a>"
+    },
+    {
+      "id": 3,
+      "text": "let vs. const: why is it better to use const when possible?",
+      "hasOptions": false,
+      "answer": "Using const provides two advantages:\n1) Safety: declaring variables with const protects against unintentional changes to variable values in the code, which can often lead to errors and unexpected program behavior.\n2) Readability: using const allows code readers to understand that the variable's value won't change during program execution, making the code more understandable and reducing the potential for errors. Learn more: <a href='https://youtu.be/07FllcTRj84?si=q7v60ZvHYBoRSSen' target='_blank'>Video about VAR/LET/CONST</a>"
+    },
+    {
+      "id": 4,
+      "text": "What are Promises in JavaScript?",
+      "hasOptions": false,
+      "answer": "Promises are objects that represent the result of an asynchronous operation. They can be in one of three states: pending, fulfilled, or rejected."
+    },
+    {
+      "id": 5,
+      "text": "What is destructuring in JavaScript?",
+      "hasOptions": false,
+      "answer": "Destructuring allows you to extract individual properties from objects or elements from arrays and assign them to variables in a more convenient form. For example, you can extract the name and address of a user from an object in one line of code: <code>const { name, address } = user;</code>"
+    },
+    {
+      "id": 6,
+      "text": "What are arrow functions in JavaScript?",
+      "hasOptions": false,
+      "answer": "Arrow functions are a syntactically compact way to write functions in JavaScript that do not have their own 'this' binding. They are often used for creating anonymous functions. <a href='https://youtu.be/nGVYdna4kq4?si=1k0J9F-MYxWCaq6M' target='_blank'>Detailed video about functions in JS</a>"
+    },
+    {
+      "id": 7,
+      "text": "What is hoisting in JavaScript?",
+      "hasOptions": false,
+      "answer": "Hoisting is a mechanism in JavaScript where variable and function declarations are moved to the top of their scope before the code is executed."
+    },
+    {
+      "id": 8,
+      "text": "Which method is used to add an element to an array?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "splice()", "isCorrect": false },
+        { "id": 2, "text": "pop()", "isCorrect": false },
+        { "id": 3, "text": "shift()", "isCorrect": false },
+        { "id": 4, "text": "push()", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Which object represents the current browser window?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "document", "isCorrect": false },
+        { "id": 2, "text": "screen", "isCorrect": false },
+        { "id": 3, "text": "window", "isCorrect": true },
+        { "id": 4, "text": "browser", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Which operator is used for strict equality comparison?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "==", "isCorrect": false },
+        { "id": 2, "text": "===", "isCorrect": true },
+        { "id": 3, "text": "=", "isCorrect": false },
+        { "id": 4, "text": "!==", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Which method is used to remove the last element from an array?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "splice()", "isCorrect": false },
+        { "id": 2, "text": "pop()", "isCorrect": true },
+        { "id": 3, "text": "shift()", "isCorrect": false },
+        { "id": 4, "text": "push()", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Which method in JavaScript is used to convert an object to a JSON string?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "JSON.stringify()", "isCorrect": true },
+        { "id": 2, "text": "JSON.parse()", "isCorrect": false },
+        { "id": 3, "text": "JSON.toText()", "isCorrect": false },
+        { "id": 4, "text": "JSON.toString()", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Which object in JavaScript is used to work with dates and times?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Time", "isCorrect": false },
+        { "id": 2, "text": "Date", "isCorrect": true },
+        { "id": 3, "text": "Calendar", "isCorrect": false },
+        { "id": 4, "text": "DateTime", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Which array method in JavaScript is used to filter elements based on a specific criterion?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "map()", "isCorrect": false },
+        { "id": 2, "text": "filter()", "isCorrect": true },
+        { "id": 3, "text": "reduce()", "isCorrect": false },
+        { "id": 4, "text": "forEach()", "isCorrect": false }
+      ]
+    }
+  ],
+  "react": [
+    {
+      "id": 1,
+      "text": "What is React JS?",
+      "hasOptions": false,
+      "answer": "React JS, or simply React, is an open-source JavaScript library for building user interfaces, especially for single-page applications (SPAs).\n\nKey features of React:\n\n1) Component-Based Approach: React is built on the concept of components, allowing developers to create easily reusable pieces of code;\n\n2) Virtual DOM: React uses a virtual DOM to track changes. It's an abstraction of the real DOM, allowing the library to update only the parts of the interface that have actually changed, rather than re-rendering the entire page. This makes React relatively fast;\n\n3) Hooks: The introduction of hooks allows using state and other class component features in functional components, making code shorter and cleaner;\n\n4) Community and Ecosystem: React has a large and active developer community, as well as many libraries and tools created by the community, making it easier to develop complex applications."
+    },
+    {
+      "id": 2,
+      "text": "What is the purpose of the key attribute when rendering lists?",
+      "hasOptions": false,
+      "answer": "Keys help React identify which items have changed, been added, or been removed. They should be given to elements inside an array to give the elements a stable identity. The best way to pick a key is to use a string that uniquely identifies a list item among its siblings. Most often, you would use IDs from your data as keys. Indexes from the array can also be used as keys, but only if the items don't have a stable ID."
+    },
+    {
+      "id": 3,
+      "text": "How does the children prop work?",
+      "hasOptions": false,
+      "answer": "Some components don't know their children ahead of time. This is especially common for components like Sidebar or Dialog that represent a box where any content can be placed. In such cases, you can use a special prop called children that passes the child elements directly into the output.\n\nLearn more: <a href='https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children' target='_blank'>React Documentation (English)</a>"
+    },
+    {
+      "id": 4,
+      "text": "What are Portals in React?",
+      "hasOptions": false,
+      "answer": "Portals allow you to render child elements into a DOM node that exists outside the DOM hierarchy of the parent component. A common use case for portals is when you have a parent component with styles like overflow: hidden or z-index, but you need a child element to visually 'break out' of its container. This is often used for modal dialogs, pop-up cards, and tooltips."
+    },
+    {
+      "id": 5,
+      "text": "What is Reconciliation in React?",
+      "hasOptions": false,
+      "answer": "Reconciliation is the process by which React updates the DOM. When the state of a component changes, React needs to determine whether the DOM needs to be updated. This is done by creating a virtual DOM and comparing it with the current DOM. In this context, the virtual DOM will contain the new state of the component."
+    },
+    {
+      "id": 6,
+      "text": "What is the purpose of the useEffect hook in React?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "To store component state",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "To perform side effects",
+          "isCorrect": true
+        },
+        { "id": 3, "text": "To memoize values", "isCorrect": false },
+        {
+          "id": 4,
+          "text": "To create references to DOM elements",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "What happens if an empty array [] is passed as the second argument to useEffect?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Error", "isCorrect": false },
+        {
+          "id": 2,
+          "text": "useEffect will run 0 times",
+          "isCorrect": false
+        },
+        { "id": 3, "text": "useEffect will run 1 time", "isCorrect": true },
+        { "id": 4, "text": "No correct answer", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Which hook is used to create component state in React?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "useEffect", "isCorrect": false },
+        { "id": 2, "text": "useState", "isCorrect": true },
+        { "id": 3, "text": "useContext", "isCorrect": false },
+        { "id": 4, "text": "useReducer", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Which element is used to group elements without adding extra nodes to the DOM?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<Group>", "isCorrect": false },
+        { "id": 2, "text": "<Div>", "isCorrect": false },
+        { "id": 3, "text": "<Fragment> (<>)", "isCorrect": true },
+        { "id": 4, "text": "<List>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "If we have an array of strings (arr) that we want to render on the page, what array method should be used in the component's return?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "{arr.forEach(...)}", "isCorrect": false },
+        { "id": 2, "text": "{arr.filter(...)}", "isCorrect": false },
+        { "id": 3, "text": "{arr.for(...)}", "isCorrect": false },
+        { "id": 4, "text": "{arr.map(...)}", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Which element is used for error handling in the component tree?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "ErrorBoundary", "isCorrect": true },
+        { "id": 2, "text": "CatchError", "isCorrect": false },
+        { "id": 3, "text": "ErrorWrapper", "isCorrect": false },
+        { "id": 4, "text": "ErrorCatcher", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "What argument(s) does the useMemo hook take?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Function and an array of dependencies",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Function and an options object",
+          "isCorrect": false
+        },
+        { "id": 3, "text": "Function", "isCorrect": false },
+        { "id": 4, "text": "Array of dependencies", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "What is the purpose of the useCallback hook in React?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "To create references to DOM elements",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "To store component state",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "To perform side effects",
+          "isCorrect": false
+        },
+        { "id": 4, "text": "To memoize functions", "isCorrect": true }
+      ]
+    }
+  ]
+}
