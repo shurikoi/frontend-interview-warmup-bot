@@ -2,7 +2,6 @@ require("dotenv").config()
 const {
   Bot,
   Keyboard,
-  InlineKeyboard,
   GrammyError,
   HttpError,
 } = require("grammy")
@@ -22,7 +21,7 @@ bot.command("start", async (ctx) => {
     .text("JavaScript")
     .text("React")
     .row()
-    .text("Random Question")
+    .text("Random question")
     .resized()
 
   await ctx.reply("Hi 👋 \nI will help you to prepare for interview")
@@ -44,7 +43,7 @@ bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
   })
 })
 
-bot.hears("Random Question", async (ctx) => {
+bot.hears(/Random Question/i, async (ctx) => {
   const topic = getRandomTopic()
   question = getRandomQuestion(topic)
   let inlineKeyboard = inlineQuestionKeyboard(question, topic)
@@ -59,7 +58,6 @@ bot.on("callback_query:data", async (ctx) => {
   const answer = getCorrectAnswer(question)
 
   if (!callbackData.type.includes('option')) {
-    console.log(answer)
     await ctx.reply(answer, {
       // for unable prewiev for links
       parse_mode: 'HTML',
@@ -70,13 +68,13 @@ bot.on("callback_query:data", async (ctx) => {
   }
 
   if (callbackData.isCorrect) {
-    await ctx.reply('Alright ✅')
+    await ctx.reply(`Alright ✅\n\nYour answer:\n${answer}`)
     await ctx.answerCallbackQuery()
     return 
   }
   
   // const answer = getCorrectAnswer(question)
-  await ctx.reply(`Incorrect answer ❌ \n\n Correct answer: ${answer}`)
+  await ctx.reply(`Incorrect answer ❌ \n\nCorrect answer:\n${answer}`)
   await ctx.answerCallbackQuery()
 })
 
