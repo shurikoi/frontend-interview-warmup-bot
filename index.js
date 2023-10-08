@@ -65,10 +65,10 @@ bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
 
 bot.on("callback_query:data", async (ctx) => {
   const callbackData = JSON.parse(ctx.callbackQuery.data)
+  const answer = getCorrectAnswer(question)
 
   if (!callbackData.type.includes('option')) {
-    const answer = getCorrectAnswer(question)
-
+    console.log(answer)
     await ctx.reply(answer, {
       // for unable prewiev for links
       parse_mode: 'HTML',
@@ -84,8 +84,9 @@ bot.on("callback_query:data", async (ctx) => {
     return 
   }
   
-  const answer = getCorrectAnswer(question)
+  // const answer = getCorrectAnswer(question)
   await ctx.reply(`Incorrect answer ❌ \n\n Correct answer: ${answer}`)
+  await ctx.answerCallbackQuery()
 })
 
 bot.catch((err) => {

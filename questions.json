@@ -65,7 +65,7 @@
       "id": 7,
       "text": "How do you create an unordered list in HTML?",
       "hasOptions": false,
-      "answer": "To create an unordered list in HTML, you use the <ul> tag, and to define each list item, you use the <li> tag."
+      "answer": "To create an unordered list in HTML, you use the &lt;ul&gt; tag, and to define each list item, you use the &lt;li&gt; tag."
     },
     {
       "id": 8,
