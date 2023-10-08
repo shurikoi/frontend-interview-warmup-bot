@@ -8,9 +8,12 @@ const {
 } = require("grammy")
 const getRandomQuestion = require("./getRandomQuestion")
 const getCorrectAnswer = require("./getCorrectAnswer")
+const getRandomTopic = require("./getRandomTopic")
+const inlineQuestionKeyboard = require("./inlineQuestionKeyboard")
 
 const bot = new Bot(process.env.BOT_API_KEY)
 
+// handle the /start command
 bot.command("start", async (ctx) => {
   const startKeyboard = new Keyboard()
     .text("HTML")
@@ -18,6 +21,8 @@ bot.command("start", async (ctx) => {
     .row()
     .text("JavaScript")
     .text("React")
+    .row()
+    .text("Random Question")
     .resized()
 
   await ctx.reply("Hi 👋 \nI will help you to prepare for interview")
@@ -30,35 +35,21 @@ let question
 
 bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
   const topic = ctx.message.text.toLowerCase()
-  let inlineKeyboard
-
   question = getRandomQuestion(topic)
-  console.log(question)
 
-  if (question.hasOptions) {
-    const buttonRows = question.options.map((option) => [
-      InlineKeyboard.text(
-        option.text,
-        JSON.stringify({
-          type: `${topic}-option`,
-          isCorrect: option.isCorrect,
-          questionId: question.id,
-        })
-      ),
-    ])
-    
-    inlineKeyboard = InlineKeyboard.from(buttonRows)
-  } else {
-    inlineKeyboard = new InlineKeyboard().text(
-      "Get answer",
-      JSON.stringify({
-        type: topic,
-        questionId: question.id,
-      })
-    )
-  }
+  let inlineKeyboard = inlineQuestionKeyboard(question, topic)
 
   await ctx.reply(question.text, {
+    reply_markup: inlineKeyboard,
+  })
+})
+
+bot.hears("Random Question", async (ctx) => {
+  const topic = getRandomTopic()
+  question = getRandomQuestion(topic)
+  let inlineKeyboard = inlineQuestionKeyboard(question, topic)
+
+  await ctx.reply(`Your topic: ${topic}\n\n${question.text}`, {
     reply_markup: inlineKeyboard,
   })
 })
