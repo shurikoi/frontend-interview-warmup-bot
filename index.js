@@ -88,11 +88,11 @@ bot.on("callback_query:data", async (ctx) => {
     console.log(topic)
     question = getQuestion(topic)
 
-  const inlineKeyboard = inlineQuestionKeyboard(question, topic)
+    const inlineKeyboard = inlineQuestionKeyboard(question, topic)
 
-  await ctx.reply(question.text, {
-    reply_markup: inlineKeyboard,
-  })
+    await ctx.reply(question.text, {
+      reply_markup: inlineKeyboard,
+    })
     await ctx.answerCallbackQuery()
     return
   }

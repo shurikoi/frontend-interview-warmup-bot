@@ -4,7 +4,7 @@ let counter = 0
 let prevTopic
 const getQuestion = (topic) => {
     counter++
-    if (topic != prevTopic) counter = 0
+    if (questions[topic].length <= counter || topic != prevTopic) counter = 0
     prevTopic = topic
     console.log(counter)
     // const numOfQuestions = Object.keys(questions[topic]).length - 1
