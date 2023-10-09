@@ -24,12 +24,12 @@
     },
     {
       "id": 3,
-      "text": "Which tag within <html> defines the document's title?",
+      "text": "Which tag within <head> defines the document's title?",
       "hasOptions": true,
       "options": [
-        { "id": 1, "text": "<head>", "isCorrect": true },
+        { "id": 1, "text": "<html>", "isCorrect": false },
         { "id": 2, "text": "<header>", "isCorrect": false },
-        { "id": 3, "text": "<title>", "isCorrect": false },
+        { "id": 3, "text": "<title>", "isCorrect": true },
         { "id": 4, "text": "<meta>", "isCorrect": false }
       ]
     },
