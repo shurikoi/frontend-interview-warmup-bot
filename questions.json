@@ -415,7 +415,7 @@
       "id": 6,
       "text": "What are arrow functions in JavaScript?",
       "hasOptions": false,
-      "answer": "Arrow functions are a syntactically compact way to write functions in JavaScript that do not have their own 'this' binding. They are often used for creating anonymous functions. <a href='https://youtu.be/nGVYdna4kq4?si=1k0J9F-MYxWCaq6M' target='_blank'>Detailed video about functions in JS</a>"
+      "answer": "Arrow functions are a syntactically compact way to write functions in JavaScript that do not have their own 'this' binding. They are often used for creating anonymous functions."
     },
     {
       "id": 7,
@@ -518,7 +518,7 @@
       "id": 3,
       "text": "How does the children prop work?",
       "hasOptions": false,
-      "answer": "Some components don't know their children ahead of time. This is especially common for components like Sidebar or Dialog that represent a box where any content can be placed. In such cases, you can use a special prop called children that passes the child elements directly into the output.\n\nLearn more: <a href='https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children' target='_blank'>React Documentation (English)</a>"
+      "answer": "Some components don't know their children ahead of time. This is especially common for components like Sidebar or Dialog that represent a box where any content can be placed. In such cases, you can use a special prop called children that passes the child elements directly into the output."
     },
     {
       "id": 4,

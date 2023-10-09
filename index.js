@@ -4,11 +4,13 @@ const {
   Keyboard,
   GrammyError,
   HttpError,
+  InlineKeyboard,
 } = require("grammy")
 const getRandomQuestion = require("./getRandomQuestion")
 const getCorrectAnswer = require("./getCorrectAnswer")
-const getRandomTopic = require("./getRandomTopic")
 const inlineQuestionKeyboard = require("./inlineQuestionKeyboard")
+const getQuestion = require("./getQuestion")
+const getRandomTopic = require("./getRandomTopic")
 
 const bot = new Bot(process.env.BOT_API_KEY)
 
@@ -31,12 +33,13 @@ bot.command("start", async (ctx) => {
 })
 
 let question
+let topic
 
 bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
-  const topic = ctx.message.text.toLowerCase()
-  question = getRandomQuestion(topic)
+  topic = ctx.message.text.toLowerCase()
+  question = getQuestion(topic)
 
-  let inlineKeyboard = inlineQuestionKeyboard(question, topic)
+  const inlineKeyboard = inlineQuestionKeyboard(question, topic)
 
   await ctx.reply(question.text, {
     reply_markup: inlineKeyboard,
@@ -44,9 +47,9 @@ bot.hears(["HTML", "CSS", "JavaScript", "React"], async (ctx) => {
 })
 
 bot.hears(/Random Question/i, async (ctx) => {
-  const topic = getRandomTopic()
+  topic = getRandomTopic()
   question = getRandomQuestion(topic)
-  let inlineKeyboard = inlineQuestionKeyboard(question, topic)
+  const inlineKeyboard = inlineQuestionKeyboard(question, topic)
 
   await ctx.reply(`Your topic: ${topic}\n\n${question.text}`, {
     reply_markup: inlineKeyboard,
@@ -57,10 +60,16 @@ bot.on("callback_query:data", async (ctx) => {
   const callbackData = JSON.parse(ctx.callbackQuery.data)
   const answer = getCorrectAnswer(question)
 
-  if (!callbackData.type.includes('option')) {
+  const nextQuestionBtn = new InlineKeyboard().text(
+    "Next question",
+    JSON.stringify({ type: "next-question" })
+  )
+
+  if (callbackData.type.includes("direct")) {
     await ctx.reply(answer, {
       // for unable prewiev for links
-      parse_mode: 'HTML',
+      reply_markup: nextQuestionBtn,
+      parse_mode: "HTML",
       disable_web_page_preview: true,
     })
     await ctx.answerCallbackQuery()
@@ -68,13 +77,29 @@ bot.on("callback_query:data", async (ctx) => {
   }
 
   if (callbackData.isCorrect) {
-    await ctx.reply(`Alright ✅\n\nYour answer:\n${answer}`)
+    await ctx.reply(`Alright ✅\n\nYour answer:\n${answer}`, {
+      reply_markup: nextQuestionBtn,
+    })
     await ctx.answerCallbackQuery()
-    return 
+    return
   }
-  
-  // const answer = getCorrectAnswer(question)
-  await ctx.reply(`Incorrect answer ❌ \n\nCorrect answer:\n${answer}`)
+
+  if (callbackData.type === "next-question") {
+    console.log(topic)
+    question = getQuestion(topic)
+
+  const inlineKeyboard = inlineQuestionKeyboard(question, topic)
+
+  await ctx.reply(question.text, {
+    reply_markup: inlineKeyboard,
+  })
+    await ctx.answerCallbackQuery()
+    return
+  }
+
+  await ctx.reply(`Incorrect answer ❌ \n\nCorrect answer:\n${answer}`, {
+    reply_markup: nextQuestionBtn,
+  })
   await ctx.answerCallbackQuery()
 })
 

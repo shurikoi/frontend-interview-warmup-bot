@@ -5,16 +5,14 @@ const getRandomTopic = () => {
   let numberOfTopics = 0
 
   for (const key in questions) {
-    if (questions.hasOwnProperty(key)) {
-      topics.push(key)
-      numberOfTopics++
-    }
+    topics.push(key)
+    numberOfTopics++
   }
 
   const topicIndex = Math.floor(Math.random() * numberOfTopics)
   const topic = topics[topicIndex]
 
-    return topic
+  return topic
 }
 
 module.exports = getRandomTopic
